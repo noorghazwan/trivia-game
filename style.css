@@ -5,7 +5,7 @@ html, body {
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(#273454); 
+  background-color: #273454;
   color: #fff;
   display: flex;
   flex-direction: column; 
