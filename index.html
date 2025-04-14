@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trivia Game</title>
+  <link rel="stylesheet" href="css/style.css"/>  <!-- Link to external CSS file -->
+</head>
+<body>
+  <header>Welcome to the Trivia Game</header>
+
+  <div class="container">
+    <h1>Trivia Quiz Game</h1>
+
+   <!-- Game settings section -->
+    <div class="controls">
+      <label for="question-count">Number of Questions (5–10):</label>
+      <input type="number" id="question-count" min="5" max="10" />
+
+      <label for="difficulty">Select Difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <div class="button-row">
+        <button id="startBtn">Start Game</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </div>
+
+    <div id="quizContainer"></div> 
+  <!-- Score display -->
+    <div id="scoreContainer">
+      <p>Correct Answers: <span id="correctCount">0</span></p>
+      <p>Incorrect Answers: <span id="incorrectCount">0</span></p>
+      <p>🔥 Best Score: <span id="bestScore">0</span></p>
+    </div>
+
+    <div id="error" class="error"></div>
+  </div>
+
+  <footer>
+    © 2025 NourAlhuda Safia. All rights reserved.
+  </footer>
+
+  <script src="js/script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
